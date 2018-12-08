@@ -1,0 +1,75 @@
+
+#text1,#text2,#text3,#text4,#textoOpcional {
+	width: 100%;
+
+}
+
+.input1,.input2,.input3,.input4,.input5,.input10{
+    width:100%;
+}
+
+#encuadernadoras input[type=text]{
+	width: 100%;
+}
+
+.text1,.text2,.text3,.text4,.text10{
+    width: 100%;
+}
+
+tr:#tablaPrueba{
+	background: red;
+}
+
+#footer a{
+	color:white;
+}
+
+#links a{
+	color:greenyellow;
+}
+
+/* ESTILOS CHECKBOX */
+
+input[type=checkbox] + label {
+  display: inline-block;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+input[type=checkbox]{
+	display:none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border:0.1em solid #000;
+  border-radius: 0.2em;
+  display:inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  color:transparent;
+}
+
+input[type=checkbox]:checked + label:before {
+	background-color:  MediumSeaGreen;
+	border-color: MediumSeaGreen;
+	color:#fff;
+}
+
+/*INDEX 3, ADMINISTRACION DE FAMILIAS*/
+
+#inputFamilias{
+  width: 400px;
+}
+
+#inputSubfamilias{
+  width: 100%;
+}
+
+.success{
+  color:green;
+  font-size:15px;
+}

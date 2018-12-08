@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+
+	
+
+
+	<script>
+
+	function clickPrueba(boton,select,texto,input,div){
+
+
+
+		$(div).find(boton).click(function () {
+
+			var numero = boton.match(/\d+$/)[0];
+			var numero = numero-1;
+		
+			var selectvalor = ($($(div).find(select+" option:selected" )).text());
+
+			var inputvalor = ($($(div).find(input)).val());
+
+			$(texto).val(inputvalor+":"+selectvalor);
+				
+		});
+	}
+
+
+	function añadirCaracteristicas(boton,textarea,valorT1,valorT2,valorT3,valorT4){
+		$(boton).click(function() {
+
+			var valorTexto1 = $(valorT1).val();
+			var valorTexto2 = $(valorT2).val();
+			var valorTexto3 = $(valorT3).val();
+			var valorTexto4 = $(valorT4).val();
+
+			
+
+
+			$(textarea).val(valorTexto1+":"+1+","+valorTexto2+":"+2+","+valorTexto3+":"+3+","+valorTexto4+":"+4);
+
+		});
+	}
+
+
+
+	function click(boton,select,texto,input){
+
+		//ignore: ":hidden"
+
+
+		$(boton).click(function() {
+
+			//ignore: ":hidden"
+
+			var numero = boton.match(/\d+$/)[0];
+			var numero = numero-1;
+		
+			var selectvalor = ($( select+" option:selected" ).text());
+
+			var inputvalor = $(input).val();
+
+			$(texto).val(inputvalor+":"+selectvalor+":"+numero);
+				
+		});
+
+	}
+
+	function clickOpcional(input1,input2,boton,texto){
+
+
+		$(boton).click(function() {
+
+			var inputvalor1 = $(input1).val();
+			var inputvalor2 = $(input2).val();
+
+			$(texto).val(inputvalor1+":"+inputvalor2+":"+"3");
+				
+		});
+
+	}
+
+
+
+	function borrar(boton,texto){
+
+		$(boton).click(function() {
+
+			$(texto).val("");
+
+		});
+	}
+
+
+
+
+</script>
+</body>
+</html>
